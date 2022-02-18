@@ -1,0 +1,99 @@
+@import "../Main/variable";
+
+.sidebar {
+  background-color: gray;
+  width: 400px;
+  height: 100vh;
+  .sidebarcont {
+    .sideimg {
+      width: 60px;
+      height: 60px;
+
+      img {
+        margin: 30px;
+        width: 60px;
+      }
+    }
+
+    .sidebarinput {
+      align-items: center;
+      margin-left: 30px;
+      margin-top: 150px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      width: 250px;
+      height: 30px;
+
+      &:focus {
+        display: none;
+      }
+
+      img {
+        padding: 4px;
+        width: 20px;
+        color: #ffffff;
+      }
+      input {
+        border: none;
+        margin-left: 20px;
+      }
+    }
+    .sidebarlist {
+      margin-top: 40px;
+      li {
+        list-style: none;
+        color: #e4dede;
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        font-weight: bold;
+      }
+    }
+    .img4 {
+      position: absolute;
+      bottom: 5px;
+      width: 50px;
+      height: 50px;
+      margin-top: 20px;
+      background-color: $primary;
+      padding: 15px;
+      border-radius: 50%;
+    }
+    .location {
+      align-items: center;
+      width: 350px;
+      height: 120px;
+
+      padding: 17px 18px;
+      bottom: 65px;
+      right: 170px;
+
+      z-index: 1;
+      font-size: 13px;
+      color: #fff;
+      background: $primary;
+
+      img {
+        display: block;
+        margin-right: 20px;
+        margin-top: 0;
+      }
+
+      .location_ict {
+        display: flex;
+        p a {
+          color: #fff;
+        }
+      }
+
+      .phone {
+        margin: 15px 40px;
+        color: #fff;
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

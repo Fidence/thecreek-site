@@ -1,3 +1,17 @@
+@import "../Main/variable";
+*{
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.home_container{
+  width: 100%;
+}
+
+
 .membership {
   position: relative;
   .empty {
@@ -79,6 +93,17 @@
     }
   }
 }
+
+//  Styling for Connect Page
+
+.products__container{
+ padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+   gap: 0.5rem; 
+
+}
+
 
 // Animation
 

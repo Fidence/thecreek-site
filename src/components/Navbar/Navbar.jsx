@@ -6,9 +6,13 @@ import { useState } from "react";
 import ModalPage from "../Modal/ModalPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const handleClick = () => setShow(!show);
+
+  const [name, setname] = useState(false);
+  const handleToggle = () =>setname(!name);
 
   return (
     <div className="nav">
@@ -40,13 +44,19 @@ const Navbar = () => {
                 Membership
               </Link>
             </li>
-           
-              <div className="home_notification" onClick={handleClick}>
-                <p>ongoing Applications</p>
-                <img src={Note} width="30px" alt="" />
-                <ModalPage handleClick={handleClick} show={show} />
-              </div>
-           
+
+            <div className="home_notification" onClick={handleToggle}>
+              <p>ongoing Applications</p>
+              <img src={Note} width="30px" alt="" />
+
+              {name && (
+                <div className="blue_toggle " onClick={handleClick}>
+                  <p>ICT & Digital Literacy Training</p>
+                </div>
+              )}
+
+              <ModalPage handleClick={handleClick} show={show} />
+            </div>
           </ul>
         </nav>
       </div>

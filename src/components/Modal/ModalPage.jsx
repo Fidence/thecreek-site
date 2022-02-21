@@ -6,7 +6,7 @@ import "../Modal/modal.scss"
 
 function ModalPage({ handleClick, show }) {
   return (
-    <Modal className="modal" show={show} onHide={handleClick}>
+    <Modal className="modal" show={show} onClick={handleClick}>
       <Modal.Header className="header" closeButton>
         <Modal.Title className="title">
           

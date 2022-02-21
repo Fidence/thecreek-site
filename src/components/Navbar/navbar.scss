@@ -1,3 +1,5 @@
+@import "../Main/variable";
+
 .nav_items {
   width: 100%;
 
@@ -30,6 +32,7 @@
        
       }
        .home_notification {
+      
           display: flex;
           align-items: center;
           text-align: center;
@@ -37,6 +40,18 @@
           padding: 14px 7px;
           margin-left: 250px;
           font-size: 14px;
+
+          .blue_toggle{
+            position: absolute;
+            top: 7%;
+            
+            right: 10%;
+            p{
+              background-color: #119789;
+              padding: 9px 15px;
+              font-size: 14px;
+            }
+          }
          
         
 

@@ -5,6 +5,7 @@ import LearnPage from "./components/pages/Learn";
 import CreatePage from "./components/pages/Create";
 import ConnectPage from "./components/pages/Connect";
 import Membership from "./components/pages/Membership";
+import NotFoundpage from "./components/Not404/Not404"; 
 
 
 
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/creat" element={<CreatePage />} />
           <Route path="/connect" element={<ConnectPage />} />
           <Route path="/member" element={<Membership />} />
+          <Route path="*" element={<NotFoundpage />} />
         </Routes>
       </Router>
     </div>

@@ -5,6 +5,7 @@ import "../Sidebar/sidebar.scss"
 import Member from "../assets/member.svg";
 import {Link} from "react-router-dom"
 import Location from "../assets/location.svg"
+import Ellipse from "../assets/Ellipse.png";
 
 
 function Sidebar() {
@@ -27,21 +28,24 @@ function Sidebar() {
             <li>Member</li>
           </ul>
         </div>
-        
-          <div className="location">
-            <div className="location_ict">
-              <img src={Location} alt="" />
-              <p>
-                Rivers State ICT Center. Opp. Pleasure Park Aba Road, Port
-                <br /> Harcourt. Rivers State, Nigeria.{" "}
-                <a href="talk@techcreek.Nigeria">talk@techcreek.ng</a>
-              </p>
-            </div>
-            <p className="phone">
-              <a href=" O9030003185, 09030003180"> O9030003185, 09030003180</a>
+
+        <div className="location">
+          <div className="location_ict">
+            <img src={Location} alt="" />
+            <p>
+              Rivers State ICT Center. Opp. Pleasure Park Aba Road, Port
+              <br /> Harcourt. Rivers State, Nigeria.{" "}
+              <a href="talk@techcreek.Nigeria">talk@techcreek.ng</a>
             </p>
           </div>
-        
+          <p className="phone">
+            <a href=" O9030003185, 09030003180"> O9030003185, 09030003180</a>
+          </p>
+        </div>
+
+        <div className="postb">
+          <img src={Ellipse} alt="" />
+        </div>
 
         <div className="img4">
           <Link to="/member">

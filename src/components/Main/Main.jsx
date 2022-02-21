@@ -7,7 +7,7 @@ import Rightbar from "../Rightbar/Rightbar";
 
 function Main() {
   return (
-    <div className="container">
+    <div className="container1">
       <div className="container_main">
 
         <div className="flex">

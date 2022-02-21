@@ -9,7 +9,11 @@ function Register() {
       <div className="signup">
         <form>
           <div className="forminput">
-            <input className="input" type="text" placeholder="First Name, Last Name" />
+            <input
+              className="input"
+              type="text"
+              placeholder="First Name, Last Name"
+            />
           </div>
 
           <div className="forminput">
@@ -28,7 +32,8 @@ function Register() {
           </div>
 
           <div className="forminput">
-            <input className="" type="checkbox" name="" id="" /> Remember me
+            <input  type="checkbox" name="" id="" />{" "}
+            <span className='reme'>Remember me</span>
             <span className="forgot">
               <Link className="link" to="/">
                 Forgot Password?

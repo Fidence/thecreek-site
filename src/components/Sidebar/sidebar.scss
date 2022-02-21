@@ -18,60 +18,78 @@
     .sidebarinput {
       align-items: center;
       margin-left: 30px;
-      margin-top: 150px;
+      margin-top: 100px;
       background-color: #ffffff;
-      border-radius: 10px;
-      width: 250px;
-      height: 30px;
+      border-radius: 50px;
+      width: 300px;
+      height: 35px;
+      padding: 2px 20px;
 
-      &:focus {
-        display: none;
-      }
+     
 
       img {
-        padding: 4px;
-        width: 20px;
+        width: 15px;
+        height: 15px;
         color: #ffffff;
+        margin-right: 5px;
       }
-      input {
+      input{
         border: none;
-        margin-left: 20px;
+       
+      }
+      input:focus {
+        outline: none;
+        border: none;
+        
       }
     }
     .sidebarlist {
       margin-top: 40px;
+
       li {
         list-style: none;
-        color: #e4dede;
+        color: #ffffff;
         font-size: 18px;
-        margin-bottom: 10px;
-        margin-left: 15px;
-        font-weight: bold;
+        margin: 20px 0; 
+       
+        font-weight: bold;cursor: pointer;
+      
       }
+    }
+    .postb {
+      width: 200px;
+      height:200px;
+      position: absolute;
+      bottom: 40px;
+      left: 250px;
+      img{
+        width: 100%;
+      }
+     
     }
     .img4 {
       position: absolute;
-      bottom: 5px;
-      width: 50px;
-      height: 50px;
-      margin-top: 20px;
+      bottom: 20px;
+      left: 25px;
+      width: 60px;
+      height: 60px;
+      margin-top: 40px;
       background-color: $primary;
-      padding: 15px;
+      padding: 12px 20px;
       border-radius: 50%;
     }
     .location {
       align-items: center;
       width: 350px;
-      height: 120px;
-
+      height: 150px;
+      margin-top: 0px;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
       padding: 17px 18px;
-      bottom: 65px;
-      right: 170px;
-
-      z-index: 1;
       font-size: 13px;
       color: #fff;
       background: $primary;
+      box-shadow: rgba(0, 150, 150, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 22px 18px;
 
       img {
         display: block;
@@ -87,7 +105,7 @@
       }
 
       .phone {
-        margin: 15px 40px;
+        margin: 0 35px;
         color: #fff;
         a {
           text-decoration: none;

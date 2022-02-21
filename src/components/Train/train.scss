@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+@import "../Main/variable";
+
+form {
+  font-size: 14px;
+    input {
+      margin:0 10px;
+  }
+
+  .payment {
+    .paragraph {
+      text-align: center;
+      font-weight: bold;
+      text-align: center;
+    }
+    span {
+      color: red;
+    }
+   
+    p{
+       line-height: 1.2; 
+       opacity: 0.8; 
+    }
+      
+    
+    .personaldata {
+        font-family: $font;
+       .informations {
+            font-size: 14px;
+           
+    }   }
+  }
+}

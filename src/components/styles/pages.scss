@@ -1,39 +1,124 @@
-.membership{
-  background-image: url(../assets/im1.jpg); 
+.membership {
+  position: relative;
+  .empty {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    height: 100%;
+    width: 100%;
+  }
+  background-image: url(../assets/im1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   width: 100%;
   position: absolute;
+
   z-index: 1;
 
-  .formcontainer{
-       background-color: black;
-       height: 100vh;
-       opacity: 0.9;
-       width: 100%;
+  .formcontainer {
+    height: 100vh;
+    opacity: 0.9;
+    width: 100%;
 
-       .formflex{
-            display: flex;
-            justify-content: space-between;
-            height: 80vh;
-            .imgcontainer{
-               display: flex;
-                flex: 2;
-                 width: 300px;
-                margin-top: 13%;
-                height: 400px;
-                border-right: 1px solid grey;
-                animation: slideInFromTop 1s ease-in; 
+    .formflex {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 80vh;
 
-                img{
-                    width: 220px;
-                    margin-left: 35%;
-                    margin-bottom: 20%;
-    
-                }
-            }
-       }
+      .imgcontainer {
+        z-index: 100001;
+        flex: 1;
+        width: 300px;
+        margin-top: 13%;
+        height: 400px;
+        border-right: 1px solid grey;
+        animation: slideInFromTop 1s ease-in;
+
+        .logoimg {
+          width: 225px;
+          height: 250px;
+          img {
+            z-index: 1;
+            opacity: 0.9;
+            width: 100%;
+            margin-left: 100%;
+            margin-bottom: 20%;
+          }
+        }
+      }
+      .memberslink {
+        display: block;
+        flex: 1;
+        list-style: none;
+        width: 300px;
+        opacity: 0.6;
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 10%;
+        margin-top: 3%;
+        animation: slideInFromBottom 1s ease-in;
+
+        .btn1 {
+          border: none;
+          background: none;
+          color: #ffffff;
+          padding:0 10px;
+          border-right: 2px solid #ffffff;
+          margin-bottom: 20px;
+        }
+
+        .btn2 {
+          border: none;
+          background: none;
+          color: #ffffff;
+          margin: 10px;
+          margin-bottom: 20px;
+        }
+      }
     }
+  }
+}
 
+// Animation
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }

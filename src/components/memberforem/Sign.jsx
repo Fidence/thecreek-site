@@ -16,7 +16,7 @@ function Sign() {
           </div>
 
           <div className="forminput">
-            <input className="" type="checkbox" name="" id="" />{" "}
+            <input className=" check" type="checkbox" name="" id="" />{" "}
             <span className='reme'>Remember me</span>
             <span className="forgot">
               <Link className="link" to="/">
@@ -25,7 +25,7 @@ function Sign() {
             </span>
           </div>
 
-          <div className="btn">
+          <div className="bton">
             <button>Log in</button>
           </div>
         </form>

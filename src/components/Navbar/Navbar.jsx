@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Note from "../assets/notification.svg";
 import { useState } from "react";
 import ModalPage from "../Modal/ModalPage";
- import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -40,13 +40,13 @@ const Navbar = () => {
                 Membership
               </Link>
             </li>
-            <li>
+           
               <div className="home_notification" onClick={handleClick}>
                 <p>ongoing Applications</p>
                 <img src={Note} width="30px" alt="" />
                 <ModalPage handleClick={handleClick} show={show} />
               </div>
-            </li>
+           
           </ul>
         </nav>
       </div>

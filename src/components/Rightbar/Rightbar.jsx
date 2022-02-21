@@ -5,7 +5,6 @@ import Learn from "../assets/learn.svg";
 import Create from "../assets/create.svg";
 import Connect from "../assets/connect.svg";
 import { Link } from "react-router-dom";
-import Ellipse from "../assets/Ellipse.png";
 import Navbar from "../Navbar/Navbar";
 
 function Rightbar() {
@@ -14,7 +13,7 @@ function Rightbar() {
       <Navbar />
       <div className="right_body">
         <div className="flex1">
-          <h1>Welcome to The &lt;creek/ &gt;</h1>
+          <h1>Welcome to The &lt;creek/&gt;</h1>
           <p>
             TechCreek is a habitat for the teeming <br /> population of youths
             making sense of their <br /> lives with their digital skills and
@@ -27,7 +26,7 @@ function Rightbar() {
         <div className="flex2">
           <img src={Hero} alt="" />
         </div>
-        <img className="postb" src={Ellipse} alt="" />
+        
       </div>
       <div className="postion">
         <div className="img1">

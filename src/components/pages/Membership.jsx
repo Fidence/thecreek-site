@@ -10,10 +10,13 @@ function Membership() {
 
   return (
     <div className="membership">
+      <div className="empty"></div>
       <div className="formcontainer">
         <div className="formflex">
           <div className="imgcontainer">
-            <img src={Logo} width="225px" height="250px" alt="" />
+            <div className="logoimg">
+              <img src={Logo}  alt="" />
+            </div>
           </div>
 
           <div className="memberslink">

@@ -13,6 +13,7 @@ const ConnectCard = ({ student }) => {
           </Link>
           <p>{student.gender}</p>
           <p>{student.stateOfOrigin}</p>
+          <div></div>
         </div>
       </div>
     </div>

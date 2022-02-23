@@ -14,16 +14,22 @@ function Train() {
             </p>
             <p>1011616837</p>
             <p>Zenith Bank</p>
-            <p>Submit Teller or payment reciept at Riv-TechCreek,R/S ICT Dept, Aba Road, PH <span>**</span></p>
+            <p>
+              Submit Teller or payment reciept at Riv-TechCreek,R/S ICT Dept,
+              Aba Road, PH <span>**</span>
+            </p>
           </div>
           <div className="personaldata">
-            <p>Personal Information</p>
+            <p className="form_p">Personal Information</p>
             <div className="informations">
               <input type="text" required placeholder="First-name*" />
               <input type="text" placeholder="Middle-name" />
               <input type="text" required placeholder="Last-name*" />
+            </div>
+            <div className="select">
               <input type="date" required placeholder="Date of Birth*" />
               <select
+                className="select_item"
                 required
                 name="Education"
                 id="Education"
@@ -36,7 +42,9 @@ function Train() {
                 <option value="Master Degree ">Master Degree</option>
                 <option value="Other ">Other</option>
               </select>
+              <br />
               <select
+                className="select_item"
                 required
                 name="gender"
                 id="gender"
@@ -47,8 +55,9 @@ function Train() {
                 <option value="Veteran">Veteran</option>
               </select>
             </div>
-            <div className="stateandlocal">
+            <div className="state">
               <select
+                className="select_item"
                 name="States"
                 id="States"
                 placeholder="--Select State Of Origin"
@@ -97,38 +106,22 @@ function Train() {
               <input type="text" placeholder="L.G.A of Origin" />
             </div>
             <div className="Contact-container">
-              <h5>Contact Information</h5>
+              <p className="form_p">Contact Information</p>
               <div className="EmailandContact">
                 <input type="email" placeholder="Email Address*" required />
                 <input type="text" required placeholder="Phone Number*" />
               </div>
-              <textarea
+              <textarea className="textarea"
                 name="Message"
                 id="Message"
-                cols="30"
+                cols="80"
                 rows="5"
                 placeholder="Residential Address*"
               ></textarea>
             </div>
-            <div className="btndiv">
+            <div className="btn">
               <button>Submit</button>
             </div>
-            {/* <div className="Navbar_location">
-              <div className="location">
-                <img
-                  src={location}
-                  alt="location-icon"
-                  className="location_img"
-                />
-              </div>
-              <div className="location_details">
-                <p>
-                  Rivers State ICT Center. Opp. Pleasure Park Aba Road, Port
-                  Harcourt. Rivers State, Nigeria. talk@techcreek.ng
-                  O9030003185, 09030003180
-                </p>
-              </div>
-            </div> */}
           </div>
         </div>
       </form>

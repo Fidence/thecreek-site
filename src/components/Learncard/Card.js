@@ -132,13 +132,7 @@ const students = [
     gender: "Female",
     stateOfOrigin: "Imo State",
   },
-  {
-    id: 20,
-    fullName: "Burk Trayhorn",
-    email: "btrayhornj@symantec.com",
-    gender: "Male",
-    stateOfOrigin: "Cross Rivers State",
-  },
+  
 ];
 
 export default students;

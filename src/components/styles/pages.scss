@@ -102,6 +102,46 @@
   grid-template-columns: repeat(4, 1fr);
    gap: 0.5rem; 
 
+    .postion {
+      display:flex;
+      padding: 40px;
+     
+     
+  
+    .img1 {
+      padding: 10px;
+      height: 55px;
+      width: 55px;
+      border-radius: 50%;
+      margin-bottom: 50px;
+
+      img {
+        width: 100%;
+      }
+    }
+    .img2 {
+     margin: 0 20px;
+      padding: 10px;
+       height: 60px;
+      width: 60px;
+     
+      border-radius: 50%;
+       img {
+        width: 100%;
+      }
+    }
+    .img3 {
+      margin-top: 20px;
+     font-size: 20px;
+     Link{
+       text-decoration: none;
+     }
+      
+
+       
+    }
+  }
+
 }
 
 

@@ -2,9 +2,15 @@
 @import "../Main/variable";
 
 form {
-  font-size: 14px;
-    input {
-      margin:0 10px;
+  font-size: 16px;
+  input {
+   
+    margin:5px  10px;
+    height: 40px;
+   
+  }
+  input::placeholder {
+    padding: 0 10px;
   }
 
   .payment {
@@ -16,18 +22,66 @@ form {
     span {
       color: red;
     }
-   
-    p{
-       line-height: 1.2; 
-       opacity: 0.8; 
+
+    p {
+      // line-height: 1.2;
+     font-weight: bold;
     }
-      
-    
+
     .personaldata {
-        font-family: $font;
-       .informations {
-            font-size: 14px;
-           
-    }   }
+      font-family: $font;
+      .form_p{
+        margin-top: 20px;
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+      .informations {
+        font-size: 14px;
+      }
+    }
+    .select{
+      display: flex;
+      .select_item{
+        margin: 5px 20px;
+        font-size: 14px;
+        height: 40px;
+      }
+     
+    }
+    .state{
+      display: flex;
+       .select_item{
+        margin: 0 20px;
+        font-size: 15px;
+        height: 40px;
+      }
+    }
+    input::placeholder{
+      font-size: 14px;
+    }
+    .Contact-container{
+    
+      .form_p{
+         margin-top: 20px;
+         margin-bottom: 0;
+        font-weight: bold;
+      }
+    }
+    .textarea{
+      margin-top: 10px;
+    } 
+    
+  }
+  .btn {
+    margin: auto;
+    button {
+      display: block;
+      margin: auto;
+      border: none;
+      background-color: red;
+      padding: 10px 40px;
+      border-radius: 3px;
+      color: #ffffff;
+    }
   }
 }

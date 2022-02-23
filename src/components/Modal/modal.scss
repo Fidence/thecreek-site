@@ -2,20 +2,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 
 .modal {
- 
   .header {
-     padding: 0 27px;
-    }
-   .title {
-        margin-bottom: 0;
-        line-height: 0.1;
-            padding: 26px 40px;
-            background: #119789;
-            color: #fff;
-            font-family: $font;
-            font-weight: bold;
-            font-size: 20px;
-            width: 100%;
-    }
-   
+  width:100%;
+    padding: 0 27px;
+  
+  }
+  .title {
+    margin-bottom: 0;
+    line-height: 0.1;
+    padding: 26px 100px;
+    background: #119789;
+    color: #fff;
+    font-family: $font;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+  } 
+
 }

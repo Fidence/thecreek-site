@@ -9,13 +9,11 @@ function ModalPage({ handleClick, show }) {
     <Modal className="modal" size="lg" show={show} onClick={handleClick}>
       <Modal.Header className="header" closeButton>
         <Modal.Title className="title">
-          
-            ICT & Digital Literacy Training
-          
+          ICT & Digital Literacy Training
         </Modal.Title>
       </Modal.Header>
       <Modal.Body className="body">
-        <Train />
+        <Train handleClick={handleClick} />
       </Modal.Body>
     </Modal>
   );

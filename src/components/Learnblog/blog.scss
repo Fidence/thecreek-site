@@ -1,0 +1,144 @@
+@import "../Main/variable";
+
+.blog {
+  background: url(../assets/blog.jpeg) no-repeat center center/cover;
+  object-fit: contain;
+  //   width: 100%;
+  height: 90vh;
+  position: relative;
+
+  font-family: $font;
+
+  font-weight: bolder;
+  margin-bottom: 50px;
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    font-size: 25px;
+    .bloglogo{
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li{
+          font-size: 20px;
+          color: $primary;
+          margin-left: 30px;
+          list-style: none;
+          &:hover{
+            cursor: pointer;
+            color: #ffffff;
+          }
+          
+        }
+        
+      }
+    }
+
+    .blog_text {
+      position: absolute;
+      top: 200px;
+      left: 150px;
+      h1 {
+        font-weight: bolder;
+        font-size: 50px;
+        line-height: 1.6;
+      }
+
+      button {
+        background-color: transparent;
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        font-size: 14px;
+        border-radius: 5px;
+
+        padding: 10px 40px;
+        &:hover {
+          background-color: $primary;
+          border: none;
+          position: relative;
+          top: 5px;
+          transition: 1s ease-out;
+        }
+      }
+    }
+  }
+}
+
+// BLOG2 STYLING
+.main_container {
+  width: 100%;
+  .blog_main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    .blog1 {
+     
+      width: 400px;
+      height: 550px;
+      box-shadow: 0px 10px 10px silver;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+      p {
+        font-weight: 500;
+        padding: 5px 10px;
+      }
+    }
+    .blog2 {
+      width: 400px;
+      height: 550px;
+      box-shadow: 0px 10px 10px silver;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+      p {
+        font-weight: 500;
+        padding: 5px 10px;
+      }
+    }
+    .blog3 {
+      width: 400px;
+      height: 550px;
+      box-shadow: 0px 10px 10px silver;
+
+      img {
+        width: 100%;
+       
+        object-fit: cover;
+      }
+      p {
+        font-weight: 500;
+        padding: 5px 10px;
+      }
+    }
+  }
+  button{
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    background-color: $primary;
+    padding: 10px 0;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 40px;
+  }
+}

@@ -1,87 +1,90 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 @import "../Main/variable";
 
-form {
-  font-size: 16px;
-  input {
-   
-    margin:5px  10px;
-    height: 40px;
-   
-  }
-  input::placeholder {
-    padding: 0 10px;
-  }
-
-  .payment {
-    .paragraph {
-      text-align: center;
-      font-weight: bold;
-      text-align: center;
-    }
-    span {
-      color: red;
-    }
-
-    p {
-      // line-height: 1.2;
-     font-weight: bold;
-    }
-
-    .personaldata {
-      font-family: $font;
-      .form_p{
-        margin-top: 20px;
+.train_container {
+  width: 100%;
+    .payment {
+      .paragraph {
+        text-align: center;
         font-weight: bold;
-        margin-bottom: 0;
+        text-align: center;
       }
-      .informations {
-        font-size: 14px;
+      span {
+        color: red;
       }
-    }
-    .select{
-      display: flex;
-      .select_item{
-        margin: 5px 20px;
-        font-size: 14px;
-        height: 40px;
-      }
-     
-    }
-    .state{
-      display: flex;
-       .select_item{
-        margin: 0 20px;
-        font-size: 15px;
-        height: 40px;
-      }
-    }
-    input::placeholder{
-      font-size: 14px;
-    }
-    .Contact-container{
-    
-      .form_p{
-         margin-top: 20px;
-         margin-bottom: 0;
+
+      p {
+        // line-height: 1.2;
         font-weight: bold;
       }
+      form {
+        font-size: 16px;
+        input {
+      
+          height: 40px;
+        }
+        input::placeholder {
+          padding: 0 10px;
+       }
+       .personaldata {
+        font-family: $font;
+        .form_p {
+          margin-top: 20px;
+          font-weight: bold;
+          margin-bottom: 0;
+        }
+        .informations {
+          font-size: 14px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+        }
+      }
+      .select {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        .select_item {
+          font-size: 14px;
+          height: 40px;
+        }
+      }
+      .state {
+        display: flex;
+        .select_item {
+          font-size: 15px;
+          height: 40px;
+        }
+      }
+      input::placeholder {
+        font-size: 14px;
+      }
+      .Contact-container {
+        .form_p {
+          margin-top: 20px;
+          margin-bottom: 0;
+          font-weight: bold;
+        }
+      }
+      .textarea {
+        margin-top: 10px;
+      }
     }
-    .textarea{
-      margin-top: 10px;
-    } 
-    
-  }
-  .btn {
-    margin: auto;
-    button {
+    .btn {
       display: block;
       margin: auto;
-      border: none;
-      background-color: red;
-      padding: 10px 40px;
-      border-radius: 3px;
-      color: #ffffff;
+      button {
+        border: none;
+        background-color: red;
+        width: 150px;
+        padding: 10px 40px;
+        border-radius: 3px;
+        color: #ffffff;
+      }
     }
-  }
+      }
+      
+    
+  
+  
 }

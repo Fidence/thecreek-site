@@ -15,14 +15,13 @@ function Sign() {
             <input className="input" type="text" placeholder="Password" />
           </div>
 
-          <div className="forminput">
-            <input className=" check" type="checkbox" name="" id="" />{" "}
-            <span className='reme'>Remember me</span>
-            <span className="forgot">
-              <Link className="link" to="/">
-                Forgot Password?
-              </Link>
-            </span>
+          <div className="checkbox_container">
+            <div className="check_box">
+              <input type="checkbox" /> <span className='reme'>Remember me</span>
+            </div>
+            <div className="forgot">
+             <Link  className='link' to="/">forgot Password</Link>
+            </div>
           </div>
 
           <div className="bton">

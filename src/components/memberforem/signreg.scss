@@ -7,49 +7,71 @@
 
 // Sign in section
 .signup {
-  z-index: 1;
+  z-index: 99;
   width: 372px;
   height: 231px;
+
   form {
+    height: 45px;
+    z-index: 99;
     width: 100%;
     .forminput {
         
       width: 100%;
       margin-bottom: 20px;
-      .reme {
-        color: #ffffff;
-        opacity: 0.8;
-      }
+     
 
       .input {
-          background:#ffffff ;
-          opacity: 0.9;
+        background:#ffffff ;
+        opacity: 0.9;
         width: 100%;
         height: 45px;
         border-radius: 4px;
         outline: none;
+        padding:0 10px;
+
+        input{
+        padding: 20px;
+        z-index: 100;
+        background-color: #ffffff ;
+        opacity: 0.9;
+        
+      }
   
       }
-      input{
-        background-color: #ffffff ;
-        padding: 0 10px;
-        opacity: 0.9;
-        // &::placeholder{
-        //   padding: 0 10px;
-        // }
+    }
+    .select{
+      width: 100%;
+      height: 45px;
+      // margin-left: 10px;
+    }
+    .checkbox_container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+  
+      .check_box{
+       
+        .reme{
+          margin-left: 5px;
+          opacity: 0.5;
+          z-index: 99;
+          color: #ffffff;
+        
+        }
+        
       }
-
-      .forgot {
-        margin-left: 120px;
-      }
-      .link {
-        color: #ffffff;
-        opacity: 0.8;
-        text-decoration: none;
+      .forgot{
+         .link{
+          text-decoration: none;
+          color: #ffffff;
+           opacity: 0.5;
+        }
       }
     }
     .bton {
-      z-index: 1;
+      z-index: 100;
       width: 100%;
       height: 45px;
       button {
@@ -60,6 +82,7 @@
         color: #ffffff;
         border-radius: 4px;
         opacity: 0.9;
+       
       }
     }
   }
@@ -74,6 +97,7 @@
         border: none;
         color: #ffffff;
         border-radius: 4px;
+       
     }
 }
 //  styling for singin and register buttom

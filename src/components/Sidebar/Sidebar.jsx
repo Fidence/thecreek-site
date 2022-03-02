@@ -42,16 +42,17 @@ function Sidebar() {
             <a href=" O9030003185, 09030003180"> O9030003185, 09030003180</a>
           </p>
         </div>
+        <div></div>
 
         <div className="postb">
           <img src={Ellipse} alt="" />
         </div>
 
-        <div className="img4">
-          <Link to="/member">
+        <Link to="/member">
+          <div className="img4">
             <img src={Member} width="20px" height="20px" alt="" />
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
     </div>
   );

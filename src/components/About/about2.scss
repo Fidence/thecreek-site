@@ -1,0 +1,117 @@
+@import "../Main/variable";
+
+.bg_container {
+  margin-top: 60px;
+  width: 570px;
+  height: 470px;
+  position: relative;
+  .abt_3 {
+        .about_bg1 {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        left: 25%;
+        top: 30%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        }
+        .about_bg2 {
+        width: 150px;
+        position: absolute;
+        left: 55%;
+        top: 80%;
+        margin-bottom: 30px;
+        img {
+            width: 100%;
+        }
+        }
+        .about_bg3 {
+        width: 150px;
+        position: absolute;
+        left: 55%;
+        top: 40%;
+        margin-bottom: 30px;
+        img {
+            width: 100%;
+        }
+        }
+        .about_bg4 {
+        width: 150px;
+        position: absolute;
+        left: 80%;
+        top: 25%;
+
+        img {
+            width: 100%;
+        }
+        }
+        .about_bg5 {
+        width: 150px;
+        position: absolute;
+        left: 55%;
+        top: 5%;
+        margin-bottom: 30px;
+        img {
+            width: 100%;
+        }
+        }
+        .about_bg6 {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        left: 83%;
+        top: 65%;
+
+        img {
+            width: 100%;
+        }
+        }
+    }
+     .location {
+    align-items: center;
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    padding: 17px 18px;
+    top: 600px;
+    left: 50px;
+    font-size: 13px;
+    color: #fff;
+    background: #033077;
+
+    img {
+      display: block;
+      margin-right: 20px;
+      margin-top: 0;
+    }
+
+    .location_ict {
+      display: flex;
+      p a {
+        color: #fff;
+      }
+    }
+
+    .phone {
+      margin: 0 40px;
+      color: #fff;
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+    .socials{
+      border-radius: 2px;
+     padding: 10px 10px;
+      background-color: #f2f2f2;
+      width: 150px;
+      margin-left: 30px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      
+    }
+  }
+}

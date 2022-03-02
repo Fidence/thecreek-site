@@ -3,8 +3,8 @@
     padding: 10px 20px;
   
   width: 300px;
-  height: 150px;
-  box-shadow: 0px 10px 10px silver;
+  height: 170px;
+ 
   background-color: #f5f5f5;
   box-sizing: border-box;
   border-radius: 5px;
@@ -20,4 +20,8 @@
       font-weight: bold;
      margin-bottom: 10px; 
   }
+  .socials{
+    cursor: pointer;
+  }
+  
 }

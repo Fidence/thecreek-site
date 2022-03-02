@@ -4,12 +4,16 @@ import students from "../Learncard/Card";
 import "../styles/pages.scss"
 import Learn from "../assets/learn.svg";
 import Create from "../assets/create.svg";
+
 import {Link} from "react-router-dom"
 
 
 const Connect = () => {
   return (
     <div>
+      <div className="connectbg">
+        
+      </div>
       <div className="products__container">
         {students.map((student, index) => {
           return <ConnectCard student={student} key={index} />;
@@ -30,7 +34,7 @@ const Connect = () => {
             </Link>
           </div>
           <div className="img3">
-            <Link to="/">
+            <Link className="connect_link" to="/">
               {" "}
               Home
             </Link>

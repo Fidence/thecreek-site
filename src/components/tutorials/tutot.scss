@@ -1,0 +1,38 @@
+.video_grid {
+  width: 100%;
+
+  .video_section {
+    width: 80%;
+    margin: 0 auto;
+    .video_flex {
+      display: flex;
+      padding: 20px 40px;
+      width: 833px;
+      height: 593px;
+      margin-bottom: 20px;
+
+      .image_section {
+        img {
+          width: 375px;
+          height: 100%;
+        }
+      }
+      .header1 {
+        width: 485px;
+        height: 100%;
+        padding: 50px;
+        a {
+            text-decoration: none;
+            h2 {
+              margin-top: 80px;
+            }
+        }
+        p {
+            color: black;
+            
+          width: 485px;
+        }
+      }
+    }
+  }
+}

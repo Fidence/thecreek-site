@@ -11,7 +11,7 @@ function Register() {
    const [category, setCategory] = useState("");
 
    const handleSignUpSubmit = (e) => {
-      e.preventDefault();
+      // e.preventDefault();
       const SignUp= {
         fullName,
         email,
@@ -24,8 +24,7 @@ function Register() {
          method: "POST",
          headers: { "Content-Type": "application/json" },
          body: JSON.stringify(SignUp),
-       })
-         .then(() => {
+       }).then(() => {
            console.log("Registration succesful");
            e.preventDefault();
            setfullName("");

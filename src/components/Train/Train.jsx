@@ -1,7 +1,6 @@
 import React from "react";
-import  "../Train/train.scss"
-import {useState} from "react"
-
+import "../Train/train.scss";
+import { useState } from "react";
 
 function Train({ handleClick }) {
   const [firstName, setFirstName] = useState("");
@@ -15,11 +14,11 @@ function Train({ handleClick }) {
   );
   const [lga, setLga] = useState("");
   const [email, setEmail] = useState("");
-  const [phoneNumber, setPhonenumber] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [address, setAddress] = useState("");
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     const userApplication = {
       firstName,
       middleName,
@@ -33,14 +32,25 @@ function Train({ handleClick }) {
       phoneNumber,
       address,
     };
-    fetch("http://localhost:8000/student", {
+    fetch("http://localhost:8000/apply", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(userApplication),
     }).then(() => {
       console.log("Application succesful");
-      alert("Registeration Succesful");
-      handleClick();
+       e.preventDefault();
+       setFirstName("");
+       setMiddleName("")
+       setLastName("");
+       setDateOfBirth("");
+       setEducation("");
+       setGender("");
+       setStateOfOrigin("");
+       setLga("");
+       setEmail("");
+       setPhoneNumber("");
+       setAddress("");
+       alert("Application Succesful");
     });
   };
 
@@ -215,7 +225,7 @@ function Train({ handleClick }) {
                   type="text"
                   value={phoneNumber}
                   onChange={(e) => {
-                    setPhonenumber(e.target.value);
+                    setPhoneNumber(e.target.value);
                   }}
                   required
                   placeholder="Phone Number*"
@@ -238,6 +248,9 @@ function Train({ handleClick }) {
 
           <div className="btn">
             <button>Submit</button>
+            <button className="close_btn" onClick={handleClick}>
+              close
+            </button>
           </div>
         </form>
       </div>
